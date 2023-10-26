@@ -218,6 +218,16 @@
             active = false;
             alarm();
         }
+
+        if(rest<=30){
+            $("body").css("background-color", "red");
+        } else if(rest<=60){
+            $("body").css("background-color", "green");
+        } else if(rest<=90){
+            $("body").css("background-color", "gray");
+        } else {
+            $("body").css("background-color", "skyblue");
+        }
     } 
 
   </script>
